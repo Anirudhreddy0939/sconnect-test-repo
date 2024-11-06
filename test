@@ -1,0 +1,8 @@
+jobs:
+  test_job:
+    runs-on: [self-hosted, windows]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Run PowerShell Script
+        run: | Write-Host "Hello from self-hosted runner!"
